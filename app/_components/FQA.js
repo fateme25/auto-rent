@@ -45,8 +45,9 @@ export default function FAQSection() {
 
   const [expanded, setExpanded] = useState("panel1");
 
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
+  const handleChange = (panel) => (event , isExpanded) => {
+    console.log(panel);
+    setExpanded(isExpanded ? panel : false);
   };
 
   return (
@@ -66,9 +67,8 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <Accordion
               key={index}
-              expanded={expanded === `panel${index + 1}`}
-              onChange={() => handleChange(`panel${index + 1}`)}
-              //   onChange={() => console.log("click")}
+              expanded={expanded == `panel${index + 1}`}
+              onChange={handleChange(`panel${index + 1}`)}
               sx={{
                 padding: "8px",
                 marginBottom: "20px",
@@ -88,7 +88,7 @@ export default function FAQSection() {
                   justifyContent: "space-between", // This moves the icon to the right
                 }}
                 expandIcon={
-                  expanded === `panel${index}` ? (
+                  expanded === `panel${index + 1}` ? (
                     <MinusIcon sx={{ fontSize: "1.25rem", color: "#194BF0" }} />
                   ) : (
                     <AddBoxOutlinedIcon
