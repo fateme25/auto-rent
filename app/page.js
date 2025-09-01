@@ -9,6 +9,7 @@ import BookingGuid from "./_components/BookingGuid";
 import Testimonial from "./_components/Testimonial";
 import Blog from "./_components/Blog";
 import Header from "./_components/Header";
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
   return (
