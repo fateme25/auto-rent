@@ -1,8 +1,0 @@
-{
-  "platform": "next",
-  "build": {
-    "command": "npm install && npm run build"
-  },
-  "port": 3000.
-  
-}
