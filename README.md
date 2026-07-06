@@ -7,7 +7,7 @@ The project fully supports **Jalali (Persian) dates** and provides a modern, res
 ---
 
 ## 🎯 Live Demo  
-🔗 https://auto-rent-liart.vercel.app/
+🔗 https://automobile-rent.netlify.app/
 
 ## 🚀 Tech Stack
 
